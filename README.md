@@ -1,4 +1,4 @@
-# **Full**-fledged Universal Deploy
+# *Full* Universal Deploy
 
 See: https://github.com/universal-deploy/universal-deploy
 
