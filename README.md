@@ -1,6 +1,8 @@
 # *Full* Universal Deploy
 
-Goal: extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy) to common deployment features.
+**Goal**: deep deployment integration for Vite apps with zero-config.
+
+**Scope**: extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy) to common deployment features.
 
 ## Server deployment
 
