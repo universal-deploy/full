@@ -1,4 +1,4 @@
-# *Full* Universal Deploy
+# Full Universal Deploy
 
 **Goal**: deep deployment integration for Vite apps with zero-config.
 
