@@ -4,7 +4,7 @@
 
 **Scope**: extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy) to common deployment features.
 
-## Server deployment
+## Deployment actions
 
 Zero-config support for:
 
@@ -17,7 +17,7 @@ Zero-config support for:
 - Tasks (queues, cron jobs)
 - ...
 
-## Static deployment
+## Deployment features
 
 Zero-config support for:
 
