@@ -30,6 +30,7 @@ CLI integration:
 - `$ vite deploy status` => deployment status, and downtime status for past 30 days
 - `$ vite deploy ls` => e.g. number of workers, system metrics (CPU usage, mem usage)
 - `$ vite deploy db` => connect to DB and run queries, e.g. `SELECT { title, release_date } FROM movies;`
+  - `$ vite deploy db migrate` => connect to DB and run migrations
 
 > [!NOTE]
 > **Why? AI.**
