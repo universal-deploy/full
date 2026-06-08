@@ -28,6 +28,16 @@ Support for:
 > Universal Deploy has been developed with such features in mind — implementing this is relatively easy.
 
 
+## Async jobs
+
+How can the user define async tasks, queues, cron jobs in a way that works across many deployment providers?
+
+> [!NOTE]
+> **Technical details**
+>
+> The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's see if can use the UNIX cron syntax as a standard syntax for cron jobs.
+
+
 ## CLI
 
 CLI integration:
@@ -41,16 +51,6 @@ CLI integration:
 > **Motivation: AI**
 >
 > AI cannot (practically) work with UIs — the CLI enables AI to access deployment information (e.g. deployment logs for debugging).
-
-
-## Async jobs
-
-How can the user define async tasks, queues, cron jobs in a way that works across many deployment providers?
-
-> [!NOTE]
-> **Technical details**
->
-> The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's see if can use the UNIX cron syntax as a standard syntax for cron jobs.
 
 
 ## Environment Variables
