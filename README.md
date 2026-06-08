@@ -84,8 +84,8 @@ CLI integration:
 
 ## AI
 
-What is the future of deployment integration with AI workflows?
+How will the future of deployment integration with AI workflows look like?
 
 Example:
-- Error detected in deployment => AI is automatically prompted => AI can access deployment logs and source code => AI proposes fix => human review => fix is merged & deployed
-- The only human intervention in the flow above is reviewing the bug fix
+- Error detected in deployment => AI is automatically prompted => AI can access deployment logs => AI proposes fix => human review => fix is merged & deployed
+- The only human intervention is reviewing the bug fix
