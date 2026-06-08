@@ -12,7 +12,7 @@
 
 ## Goal
 
-Extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy): **deeper** integration between Vite aps and deployment — support features like SPA fallback, async jobs, ...
+Extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy): **deeper** integration between Vite apps and deployment — support features like SPA fallback, async jobs, ...
 
 Everything stays **zero-config**: Vite apps can be deployed out-of-the-box with minimal config.
 
@@ -25,8 +25,8 @@ Everything stays **zero-config**: Vite apps can be deployed out-of-the-box with 
 ## Static hosting
 
 Support for:
-- URL rewrites, for following use cases:
-  - SPA fallback (e.g. serve `dist/client/product/index.html` for route `/product/:id`, i.e. URLs `/product/42`, `/product/1337`, ...)
+- URL rewrites — use cases:
+  - SPA fallback (e.g. serve `dist/client/product/index.html` for all URLs `/product/:id`, i.e. `/product/42`, `/product/1337`, ...)
   - 404 page (serve `dist/client/404/index.html` as a catch-all fallback)
 - URL redirects
 
@@ -38,7 +38,7 @@ Support for:
 > [!NOTE]
 > **Implementation**
 >
-> Universal Deploy has been developed with such features in mind — implemention is relatively easy.
+> Universal Deploy has been developed with such features in mind — implementation is relatively easy.
 
 
 ## Async jobs
@@ -48,7 +48,7 @@ How can the user define async tasks, queues, and cron jobs in a way that works a
 > [!NOTE]
 > **Implementation**
 >
-> The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's explore whether we can use the UNIX cron syntax as the standard syntax for cron jobs.
+> The implementation itself is relatively easy — this is mostly about research to find a (new?) standard syntax. For example, whether we can use the UNIX cron syntax as the standard syntax.
 
 
 ## CLI
