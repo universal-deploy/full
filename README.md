@@ -12,10 +12,9 @@
 
 ## Goal
 
-Extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy):
+Extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy) and **deeper** integration between Vite aps and deployment: support more features like SPA fallback, async jobs, ...
 
-- **Deeper**: support more features like SPA fallback, async jobs, ...
-- **Zero-config**: Vite apps deploy out-of-the-box with no/minimal config
+Everything stays **zero-config**: Vite apps deploy out-of-the-box with no/minimal config.
 
 > [!NOTE]
 > **Vite**
