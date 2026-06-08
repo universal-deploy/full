@@ -34,7 +34,7 @@ Support for:
 > [!NOTE]
 > **Marketing**
 >
-> It's a quick-win for a deployment provider to position itself as the best solution to host static websites. Vike (and others) will, accordingly, recommend its users to use deployment providers for static websites. It's an effective way to earn trust and popularity amongst users.
+> It's a quick-win for a deployment provider to position itself as the best solution for hosting static websites. Vike (and others) will, accordingly, recommend its users to use deployment providers for static websites. It's an effective way to earn trust and popularity amongst users.
 
 > [!NOTE]
 > **Implementation**
