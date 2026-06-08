@@ -1,5 +1,13 @@
 # Full Universal Deploy
 
+## Contents
+
+- [Goal](#goal)
+- [Static hosting](#static-hosting)
+- [Async jobs](#async-jobs)
+- [CLI](#cli)
+- [AI integration](#ai-integration)
+
 ## Goal
 
 *Zero-config, deep integration between Vite apps and deployment providers.*
