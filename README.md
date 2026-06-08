@@ -23,7 +23,7 @@ Support for:
 > It's a quick-win for a deployment provider to position itself as the best solution to host static websites. Vike (and others) will, accordingly, recommend its users to use deployment providers for static websites. It's an effective way to earn trust and popularity amongst users.
 
 > [!NOTE]
-> **Technical details**
+> **Implementation**
 >
 > Universal Deploy has been developed with such features in mind — implementing this is relatively easy.
 
@@ -33,7 +33,7 @@ Support for:
 How can the user define async tasks, queues, cron jobs in a way that works across many deployment providers?
 
 > [!NOTE]
-> **Technical details**
+> **Implementation**
 >
 > The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's see if can use the UNIX cron syntax as a standard syntax for cron jobs.
 
@@ -46,28 +46,29 @@ CLI integration:
 - `$ vite deploy ls` => e.g. number of workers, system metrics (CPU usage, mem usage)
 - `$ vite deploy db` => connect to DB and run queries, e.g. `SELECT { title, release_date } FROM movies;`
   - `$ vite deploy db migrate` => connect to DB and run migrations
+- `$ vite secrets` => manage production environment variables (e.g. `DB_PASSWORD`)
+  - ```shell
+    # Get all secrets
+    $ vite deploy secrets list
+    ```
+  - ```shell
+    # Set a secret
+    $ vite deploy secrets set DB_PASSWORD lOK9uiUuCP75lMzQ
+    ```
 
 > [!NOTE]
 > **Motivation: AI**
 >
 > AI cannot (practically) work with UIs — the CLI enables AI to access deployment information (e.g. deployment logs for debugging).
 
-
-## Environment Variables
-
-How can we best manage/support secrets?
-
 > [!NOTE]
-> **What are secrets?**
+> **Implementation**
 >
-> Secrets are environment variables that hold senstive information such as `DB_PASSWORD`.
->
-> The goal here is that is that secrets are supported by the deployment provider without the user having to configure anything — the Vite-based framework and deployment provider talk to each other directly through Universal Deploy.
->
-> See also:
-> - [SecretSpec](https://secretspec.dev)
+> - We first quickly implement `$ vike deploy` (instead of `$ vite deploy`)
+> - We talk to the Vite about adding `$ vite deploy` to Vite's CLI:
+    - The Vite team has repeatedly shown interest of having Vite plugins be able to extend Vite's CLI (e.g. for supporting the idea that frameworks are "just Vite plugins")
+    - We're currently working with the Vite team and the Vite ecosystem on [Vite deployment plugins](https://github.com/vitejs/vite/discussions/20907). Thus, adding a `deploy` CLI command is the next natural step.
 
-We can first focus on simple use cases for small teams, while maybe trying to be flexible for enterprises that have a rigid process for managing secrets.
 
 
 ## AI integration
