@@ -2,7 +2,7 @@
 
 *Zero-config, deep integration between Vite apps and deployment providers.*
 
-## Contents
+**Contents**
 
 - [Goal](#goal)
 - [Static hosting](#static-hosting)
