@@ -1,6 +1,6 @@
 # Full Universal Deploy
 
-*Zero-config, deep integration between Vite apps and deployment providers.*
+*Deep, zero-config integration between Vite apps and deployment providers.*
 
 **Contents**
 
