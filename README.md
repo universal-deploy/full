@@ -2,25 +2,30 @@
 
 ## Goal
 
-**Deep & zero-config integration** between (Vite) apps and deployment providers:
-- Deep: support advanced features like SPA fallback, AI integrations, ...
-- Zero-config: the deployment integration works out-of-the-box with no/minimal config.
+*Zero-config, deep integration between (Vite) apps and deployment providers.*
+- **Deep**: advanced features like SPA fallback, AI integrations, ...
+- **Zero-config**: deployment works out-of-the-box with no/minimal config.
 
 This proposal is about extending [Universal Deploy](https://github.com/universal-deploy/universal-deploy) to support more common deployment features.
 
-> [!NOTE]
-> **Brainstorming: quick-wins & vision.**
->
-> This isn't a fixed plan — it's brainstorming to develop quick-win opportunities for Universal Deploy as well as to develop the Universal Deploy vision.
 
-
-## Static deployments
+## Static hosting
 
 Support for:
 - URL rewrites:
   - Use case: SPA fallback (e.g. serve `dist/client/product/index.html` for route `/proudct/:id` i.e. URLs `/product/42`, `/product/1337`, ...)
   - Use case: 404 page (serve `dist/client/404/index.html` for route `/*` as a fallback)
 - URL redirects
+
+> [!NOTE]
+> *Marketing**
+>
+> It's a quick-win for a deployment provider to position itself as the best solution to host static websites. Vike (and others) will, accordingly, recommend its users to use deployment providers for static websites. It's an effective way to earn trust and popularity amongst users.
+
+> [!NOTE]
+> **Technical details**
+>
+> Universal Deploy has been developed with such features in mind — implementing this is relatively easy.
 
 
 ## CLI
@@ -33,16 +38,19 @@ CLI integration:
   - `$ vite deploy db migrate` => connect to DB and run migrations
 
 > [!NOTE]
-> **Why? AI.**
+> **Motivation: AI**
 >
 > AI cannot (practically) work with UIs — the CLI enables AI to access deployment information (e.g. deployment logs for debugging).
 
 
-## Tasks
+## Async jobs
 
-How to support tasks (cron jobs and queues) in a way that works for any deployment provider?
+How can the user define async tasks, queues, cron jobs in a way that works across many deployment providers?
 
-Is there a standard syntax for defining tasks & queues? The UNIX cron syntax?
+> [!NOTE]
+> **Technical details**
+>
+> The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's see if can use the UNIX cron syntax as a standard syntax for cron jobs.
 
 
 ## Environment Variables
