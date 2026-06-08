@@ -1,5 +1,7 @@
 # Full Universal Deploy
 
+*Zero-config, deep integration between Vite apps and deployment providers.*
+
 ## Contents
 
 - [Goal](#goal)
@@ -10,11 +12,10 @@
 
 ## Goal
 
-*Zero-config, deep integration between Vite apps and deployment providers.*
-- **Deep**: advanced features like SPA fallback, async jobs, ...
-- **Zero-config**: deploying Vite apps works out-of-the-box with no/minimal config.
+Extending [Universal Deploy](https://github.com/universal-deploy/universal-deploy):
 
-This proposal is about extending [Universal Deploy](https://github.com/universal-deploy/universal-deploy) to support more common deployment features.
+- **Deeper**: support more features like SPA fallback, async jobs, ...
+- **Zero-config**: deploying Vite apps works out-of-the-box with no/minimal config.
 
 > [!NOTE]
 > *Vite**
