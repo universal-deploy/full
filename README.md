@@ -27,7 +27,7 @@ Extending [Universal Deploy](https://github.com/universal-deploy/universal-deplo
 
 Support for:
 - URL rewrites:
-  - Use case: SPA fallback (e.g. serve `dist/client/product/index.html` for route `/proudct/:id` i.e. URLs `/product/42`, `/product/1337`, ...)
+  - Use case: SPA fallback (e.g. serve `dist/client/product/index.html` for route `/product/:id` i.e. URLs `/product/42`, `/product/1337`, ...)
   - Use case: 404 page (serve `dist/client/404/index.html` for route `/*` as a fallback)
 - URL redirects
 
@@ -49,7 +49,7 @@ How can the user define async tasks, queues, cron jobs in a way that works acros
 > [!NOTE]
 > **Implementation**
 >
-> The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's see if can use the UNIX cron syntax as a standard syntax for cron jobs.
+> The implementation itself is relatively easy — this is mostly about researching and finding (new?) standard syntax. For example, let's see if we can use the UNIX cron syntax as a standard syntax for cron jobs.
 
 
 ## CLI
@@ -79,8 +79,8 @@ CLI integration:
 > **Implementation**
 >
 > - We first quickly implement `$ vike deploy` (instead of `$ vite deploy`)
-> - We talk to the Vite about adding `$ vite deploy` to Vite's CLI:
-    - The Vite team has repeatedly shown interest of having Vite plugins be able to extend Vite's CLI (e.g. for supporting the idea that frameworks are "just Vite plugins")
+> - We talk to the Vite team about adding `$ vite deploy` to Vite's CLI:
+    - The Vite team has repeatedly shown interest in having Vite plugins be able to extend Vite's CLI (e.g. for supporting the idea that frameworks are "just Vite plugins")
     - We're currently working with the Vite team and the Vite ecosystem on [Vite deployment plugins](https://github.com/vitejs/vite/discussions/20907). Thus, adding a `deploy` CLI command is the next natural step.
 
 
@@ -89,4 +89,4 @@ CLI integration:
 
 How will deployment integration with AI workflows look like?
 
-Example: error detected in deployment => AI is automatically prompted => AI can access deployment logs and source code => AI proposes fix => human review => fix is merged & deploy — the only human intervention here is reviewing the bug fix.
+Example: error detected in deployment => AI is automatically prompted => AI can access deployment logs and source code => AI proposes fix => human review => fix is merged & deployed — the only human intervention here is reviewing the bug fix.
