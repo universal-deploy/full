@@ -8,19 +8,19 @@
 - [Static hosting](#static-hosting)
 - [Async jobs](#async-jobs)
 - [CLI](#cli)
-- [AI integration](#ai-integration)
+- [AI](#ai)
 
 ## Goal
 
-Extending [Universal Deploy](https://github.com/universal-deploy/universal-deploy):
+Extend [Universal Deploy](https://github.com/universal-deploy/universal-deploy):
 
 - **Deeper**: support more features like SPA fallback, async jobs, ...
-- **Zero-config**: deploying Vite apps works out-of-the-box with no/minimal config.
+- **Zero-config**: Vite apps deploy out-of-the-box with no/minimal config
 
 > [!NOTE]
 > **Vite**
 >
-> We're currently focusing on the Vite ecosystem — supporting other bundlers is a long-term goal, but not a short-term priority.
+> We're currently focusing on the Vite ecosystem — supporting other bundlers is a long-term goal but not a short-term priority.
 
 
 ## Static hosting
@@ -85,7 +85,7 @@ CLI integration:
 
 
 
-## AI integration
+## AI
 
 How will deployment integration with AI workflows look like?
 
