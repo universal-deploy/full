@@ -43,7 +43,7 @@ Support for:
 
 ## Async jobs
 
-How can the user define async tasks, queues, and cron jobs in a way that works across many deployment providers?
+How can the user define async tasks, queues, and cron jobs in a way that works across many (and eventually most) deployment providers?
 
 > [!NOTE]
 > **Implementation**
@@ -56,9 +56,9 @@ How can the user define async tasks, queues, and cron jobs in a way that works a
 CLI integration:
 - `$ vite deploy logs` => server logs
 - `$ vite deploy status` => deployment status, downtime status for past 30 days, ...
-- `$ vite deploy ls` => number of workers, system metrics (CPU usage, mem usage), ...
+- `$ vite deploy ls` => number of server processes, system metrics (CPU usage, mem usage), pending tasks, ...
 - `$ vite deploy db` => connect to DB and run queries, e.g. `SELECT { title, release_date } FROM movies;`
-  - `$ vite deploy db migrate` => and run migrations
+  - `$ vite deploy db migrate` => run migrations
 - `$ vite secrets` => manage production environment variables (e.g. `DB_PASSWORD`)
   ```shell
   # Set a secret
@@ -75,17 +75,17 @@ CLI integration:
 > [!NOTE]
 > **Implementation**
 >
-> - We quickly implement `$ vike deploy` first (instead of `$ vite deploy`)
+> - At first, we implement [`$ vike deploy`](https://vike.dev/cli) instead of `$ vite deploy`
 > - We talk to the Vite team about adding `$ vite deploy` to Vite's CLI:
 >   - The Vite team has repeatedly shown interest in having Vite plugins be able to extend Vite's CLI (e.g. for further enabling frameworks to be "just Vite plugins")
->   - We're currently working with the Vite team on [Vite deployment plugins](https://github.com/vitejs/vite/discussions/20907). Adding a `deploy` CLI command is a natural next step.
+>   - We're currently working with the Vite team on [Vite deployment plugins](https://github.com/vitejs/vite/discussions/20907). Having `$ vite deploy` is a natural next step.
 
 
 
 ## AI
 
-How will the future of deployment integration with AI workflows look like?
+How will deployment providers integrate with AI workflows in the future?
 
 Example:
 - Error detected in deployment => AI is automatically prompted => AI can access deployment logs => AI proposes fix => human review => fix is merged & deployed
-- The only human intervention is reviewing the bug fix
+- Only human intervention is reviewing the bug fix, everything else is automatic
