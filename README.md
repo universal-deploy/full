@@ -18,7 +18,7 @@ Extending [Universal Deploy](https://github.com/universal-deploy/universal-deplo
 - **Zero-config**: deploying Vite apps works out-of-the-box with no/minimal config.
 
 > [!NOTE]
-> *Vite**
+> **Vite**
 >
 > We're currently focusing on the Vite ecosystem — supporting other bundlers is a long-term goal, but not a short-term priority.
 
