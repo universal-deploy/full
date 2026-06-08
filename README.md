@@ -2,11 +2,16 @@
 
 ## Goal
 
-*Zero-config, deep integration between (Vite) apps and deployment providers.*
-- **Deep**: advanced features like SPA fallback, AI integrations, ...
-- **Zero-config**: deployment works out-of-the-box with no/minimal config.
+*Zero-config, deep integration between Vite apps and deployment providers.*
+- **Deep**: advanced features like SPA fallback, async jobs, ...
+- **Zero-config**: deploying Vite apps works out-of-the-box with no/minimal config.
 
 This proposal is about extending [Universal Deploy](https://github.com/universal-deploy/universal-deploy) to support more common deployment features.
+
+> [!NOTE]
+> *Vite**
+>
+> We're currently focusing on the Vite ecosystem — supporting other bundlers is a long-term goal, but not a short-term priority.
 
 
 ## Static hosting
@@ -18,7 +23,7 @@ Support for:
 - URL redirects
 
 > [!NOTE]
-> *Marketing**
+> **Marketing**
 >
 > It's a quick-win for a deployment provider to position itself as the best solution to host static websites. Vike (and others) will, accordingly, recommend its users to use deployment providers for static websites. It's an effective way to earn trust and popularity amongst users.
 
