@@ -77,13 +77,15 @@ CLI integration:
 >
 > - We quickly implement `$ vike deploy` first (instead of `$ vite deploy`)
 > - We talk to the Vite team about adding `$ vite deploy` to Vite's CLI:
->   - The Vite team has repeatedly shown interest in having Vite plugins be able to extend Vite's CLI (e.g. for supporting the idea that frameworks are "just Vite plugins")
->   - We're currently working with the Vite team and the Vite ecosystem on [Vite deployment plugins](https://github.com/vitejs/vite/discussions/20907). Thus, adding a `deploy` CLI command is the next natural step.
+>   - The Vite team has repeatedly shown interest in having Vite plugins be able to extend Vite's CLI (e.g. for further enabling frameworks to be "just Vite plugins")
+>   - We're currently working with the Vite team on [Vite deployment plugins](https://github.com/vitejs/vite/discussions/20907). Adding a `deploy` CLI command is a natural next step.
 
 
 
 ## AI
 
-How will deployment integration with AI workflows look like?
+What is the future of deployment integration with AI workflows?
 
-Example: error detected in deployment => AI is automatically prompted => AI can access deployment logs and source code => AI proposes fix => human review => fix is merged & deployed — the only human intervention here is reviewing the bug fix.
+Example:
+- Error detected in deployment => AI is automatically prompted => AI can access deployment logs and source code => AI proposes fix => human review => fix is merged & deployed
+- The only human intervention in the flow above is reviewing the bug fix
